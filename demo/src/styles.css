@@ -18,7 +18,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: #070707;
   color: #fbfbfb;
-  overflow-x: clip;
 }
 
 body {
@@ -741,6 +740,11 @@ body {
 /* ─── Mobile: < 640px ──────────────────────────────────────── */
 
 @media (max-width: 639px) {
+  html,
+  body {
+    overflow-x: hidden;
+  }
+
   .app {
     padding: 0 16px 48px;
   }
