@@ -327,7 +327,7 @@ body {
 /* ─── Mock UI: Search bar ──────────────────────────────────── */
 
 .mock-search {
-  width: 366px;
+  width: min(332px, 100%);
   max-width: 100%;
   height: 42px;
   border-radius: 64px;
@@ -770,7 +770,7 @@ body {
     padding: 32px 20px;
     min-height: 140px;
     border-radius: 20px;
-    overflow: visible;
+    overflow: hidden;
   }
 
   .example-cell:last-child {
@@ -783,8 +783,7 @@ body {
   }
 
   .mock-search {
-    width: 366px;
-    max-width: 100%;
+    width: 100%;
     height: 48px;
     border-radius: 20px;
   }
